@@ -1,0 +1,105 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+@each $value in ('354px', '550px', '582px', '650px', '640px', '630px', '620px') {
+  .height-#{$value} {
+    height: #{$value} !important;
+  }
+
+  .height-md-#{$value} {
+    @include media-breakpoint-up(md) {
+      height: #{$value} !important;
+    }
+  }
+}
+
+.supported-payment-options-slider {
+  .slide {
+    @include media-breakpoint-up(md) {
+      min-width: 280px;
+      min-height: 250px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.hover\:text-dark {
+  &:hover {
+    color: $dark !important;
+  }
+}
+
+.widget-container {
+  display: flex;
+  // justify-content: center;
+  margin: auto;
+  margin-top: 10px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: flex;
+
+  @media (max-width: 780px) {
+    min-width: 320px;
+    width: 100%;
+    height: 100vh !important;
+    margin-top: 0px !important;
+    border-radius: 0rem !important;
+  }
+
+  @media (max-height: 620px) {
+    margin-top: 0px !important;
+  }
+
+  @media (min-width: 780px) {
+    min-width: 320px;
+    width: 780px !important;
+    height: 540px !important;
+  }
+
+  // @media (min-width: 690px) {
+  //   min-width: 320px;
+  //   width: 690px !important;
+  //   height: 540px !important;
+  // }
+}
+
+.wert-container {
+  display: flex;
+  border-radius: 24px !important;
+  margin: auto;
+  display: flex;
+
+  @media (max-width: 780px) {
+    min-width: 320px;
+    width: 100%;
+    height: 100vh !important;
+    margin-top: 0px !important;
+    border-radius: 0rem !important;
+  }
+
+  @media (max-height: 620px) {
+    margin-top: 0px !important;
+  }
+
+  @media (min-width: 780px) {
+    min-width: 320px;
+    width: 780px !important;
+    height: 540px !important;
+  }
+
+  // @media (min-width: 690px) {
+  //   min-width: 320px;
+  //   width: 690px !important;
+  //   height: 540px !important;
+  // }
+}
+
+.poweredby {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 20px;
+  height: 22px;
+}

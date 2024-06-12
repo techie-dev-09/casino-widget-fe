@@ -1,0 +1,131 @@
+$color_1: #aaa;
+$border-color_1: #b1b1b1;
+
+/**
+ * <div class="react-tags">
+ *   <div class="react-tags__selected">
+ *     <button class="react-tags__selected-tag">
+ *       <span class="react-tags__selected-tag-name" />
+ *     </button>
+ *   </div>
+ *   <div class="react-tags__search">
+ *     <div class="react-tags__search-wrapper">
+ *       <input class="react-tags__search-input" />
+ *       <div />
+ *     </div>
+ *     <div class="react-tags__suggestions">
+ *       <ul>
+ *         <li class="is-active">
+ *           <mark />
+ *         </li>
+ *         <li class="is-disabled">
+ *           <mark />
+ *         </li>
+ *       </ul>
+ *     </div>
+ *   </div>
+ */
+.react-tags {
+  position: relative;
+  padding: 6px 0 0 59px;
+  background-color: rgba(240, 241, 242, 0.4);
+  background-image: url(../../../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 1.25rem 50%;
+  border: 1px solid #edeef0;
+  border-radius: 8px;
+  font-size: 0.874rem;
+  line-height: 1.2;
+  cursor: text;
+}
+.react-tags.is-focused {
+  border-color: $border-color_1;
+}
+.react-tags__selected {
+  display: inline;
+}
+.react-tags__selected-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 0 6px 0;
+  padding: 5px 12px;
+  background: #181b30;
+  border-radius: 49px;
+  color: #ffffff;
+  font-size: inherit;
+  line-height: inherit;
+  &:after {
+    content: '\2715';
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  &:hover {
+    border-color: $border-color_1;
+  }
+  &:focus {
+    border-color: $border-color_1;
+  }
+}
+.react-tags__search {
+  display: inline-block;
+  padding: 7px 2px;
+  margin: 0 0 0.5rem 6px;
+  max-width: 100%;
+}
+.react-tags__search-input {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  &::-ms-clear {
+    display: none;
+  }
+}
+.react-tags__suggestions {
+  position: absolute;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  ul {
+    margin: 4px -1px;
+    padding: 0;
+    list-style: none;
+    background: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  li {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 8px;
+    mark {
+      text-decoration: underline;
+      background: none;
+      font-weight: 600;
+    }
+    &:hover {
+      cursor: pointer;
+      background: #eee;
+    }
+  }
+  li.is-active {
+    background: #b7cfe0;
+  }
+  li.is-disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+}
+@media screen and (min-width: 30em) {
+  .react-tags__search {
+    position: relative;
+  }
+  .react-tags__suggestions {
+    width: 240px;
+  }
+}

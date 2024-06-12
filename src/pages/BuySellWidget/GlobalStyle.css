@@ -1,0 +1,33 @@
+/* The slider */
+.slider-fun-mode {
+  cursor: pointer;
+  bottom: 0;
+  background-color: rgb(182, 182, 182);
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.slider-fun-mode:before {
+  position: absolute;
+  content: '';
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.switch-fun-mode input:checked + .slider-fun-mode {
+  background-color: #21cc4c;
+}
+
+.switch-fun-mode input:focus + .slider-fun-mode {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch-fun-mode input:checked + .slider-fun-mode:before {
+  transform: translateX(1.5em);
+}

@@ -1,0 +1,32 @@
+export const DevURL = `${process.env.REACT_APP_BACKEND_RNALYS_HOST}/api/`;
+
+const CRYPTO_ASSETS = 'crypto_assets';
+export const ALL_FIATS = CRYPTO_ASSETS + '/widget/fiats';
+export const ALL_COUNTRIES = CRYPTO_ASSETS + '/widget/countries';
+export const ALL_COINS = CRYPTO_ASSETS + '/widget/get_all_coins';
+export const GET_SWING_TOKENS = CRYPTO_ASSETS + '/get_swing_tokens';
+export const GET_STAKING_CONTRACTS = CRYPTO_ASSETS + '/swing_contracts';
+export const SWING_SWAP_TOKENS = CRYPTO_ASSETS + '/swing_swap_tokens';
+export const PAYMENT_OPTIONS = CRYPTO_ASSETS + '/widget/payment_options';
+export const PRICE_COMPARE_BUY = CRYPTO_ASSETS + '/widget_price_compare';
+export const SWING_QUOTE = CRYPTO_ASSETS + '/swing_quote';
+export const PRICE_COMPARE_SELL = CRYPTO_ASSETS + '/widget_sell_price_compare';
+export const GET_CRYPTO = CRYPTO_ASSETS + '/get_crypto';
+export const WIDGET_PAYMENT_METHOD = CRYPTO_ASSETS + '/widget_payment_options';
+export const MERCURYO_WIDGET = 'mercuryo_widget';
+export const ALCHEMY_WIDGET = 'alchemy_widget';
+export const GET_ETH = 'get_eth';
+export const VERIFY_ACCESS_TOKEN = 'rampnalysis/verify/access_token';
+export const SWAP_ORDER = CRYPTO_ASSETS + '/swap_order_data';
+export const SWING_SWAP_ORDER_WEBHOOK = 'swing/webhook';
+export const NUMBER_OF_NOTIFICATIONS = CRYPTO_ASSETS + '/number_of_notifications';
+export const NETWORK_ASSETS = CRYPTO_ASSETS + '/network_assets';
+export const RIP_POINTS = CRYPTO_ASSETS + '/rip_points';
+export const CAMPAIGNS = CRYPTO_ASSETS + '/campaigns';
+export const ACHIEVEMENTS = CRYPTO_ASSETS + '/achievements';
+export const CAMPAIGN_RIP_POINTS = CRYPTO_ASSETS + '/campaign_rip_points';
+export const CAMPAIGN_SOCIAL_TASKS = CRYPTO_ASSETS + '/campaign_social_tasks';
+export const PARTICIPATE_CAMPAIGN = CRYPTO_ASSETS + '/participate_campaign';
+export const WIDGET_IMAGES = '/rampnalysis/widget_images';
+
+export const URL = DevURL;

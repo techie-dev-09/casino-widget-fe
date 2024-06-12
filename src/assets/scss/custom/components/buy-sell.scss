@@ -1,0 +1,108 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+@import '../../variables';
+
+.buy-sell {
+  position: relative;
+
+  .tabs {
+    position: relative;
+    > div {
+      border-bottom: 2px solid $text-muted;
+      color: $text-muted;
+      cursor: pointer;
+
+      &.active {
+        color: $link-color;
+        border-color: $link-color;
+      }
+
+      &:hover {
+        $color: $link-hover-color;
+        color: $color;
+        border-color: $color;
+      }
+    }
+  }
+
+  .money-input {
+    border-width: 2px;
+
+    &__input {
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 25px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__input:focus {
+      outline: none;
+    }
+  }
+
+  .refresh {
+    height: 0.6rem;
+    overflow: visible;
+    position: relative;
+
+    &__button {
+      $size: 48px;
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      margin-left: -0.5 * $size;
+      margin-top: -0.5 * $size;
+      width: $size;
+      height: $size;
+      background-color: $card-bg;
+      border: 2px solid $card-border-color;
+    }
+  }
+
+  .coin-button {
+    padding: 4px 10px;
+    min-width: 116px;
+  }
+
+  .buy-sell__drawer {
+    position: absolute;
+    box-shadow: none;
+
+    ~ .EZDrawer__overlay {
+      position: absolute;
+    }
+  }
+
+  .simplebar-scrollbar {
+    background: $gray-900;
+    border-radius: 54px;
+  }
+
+  .payment-option {
+    min-height: 145px;
+    position: relative;
+    border: 2px solid rgba(225, 225, 239, 0.6);
+    border-radius: 16px;
+
+    &.active {
+      border-color: rgba(24, 27, 48, 0.6);
+    }
+
+    &__icon {
+      position: absolute;
+      top: 9px;
+      right: 12px;
+    }
+  }
+
+  .font-black {
+    color: #141519;
+  }
+
+  .font-white {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,21 @@
+export const constants = {
+  VALID_EMAIL: 'Enter valid email address',
+  EMAIL_REQUIRED: 'Please enter email address',
+  PASSWORD_REQUIRED: 'Please enter password',
+  CONFIRM_PASSWORD_REQUIRED: 'Please enter confirm password',
+  PASSWORD_LENGTH: 'Password must be at least 8 character',
+  SPACE_NOT_ALLOWED: 'space is not allowed',
+  SELECT_ACCOUNT_TYPE: 'Please select account type',
+  ON_RAMP_NAME: 'Please enter on ramp name',
+  PERMITTED_SERVICES: 'select atleast one Service',
+  COMPANY_NAME: 'Please enter company name',
+  BRAND_NAME: 'Please enter brand name',
+  WEBSITE: 'Please enter website url',
+  LOGO_URL: 'Please enter logo url',
+  OTP: 'Please enter OTP',
+  PROJECT_NAME: 'Please enter project name',
+  REGISTER_NUMBER: 'Please enter register number',
+  BUSINESS_CATEGORY: 'Please enter business category',
+  COUNTRY: 'Please enter country',
+  DESCRIPTION: 'Please enter product description'
+};

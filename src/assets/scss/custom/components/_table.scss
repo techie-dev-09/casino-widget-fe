@@ -1,0 +1,25 @@
+//
+// _table.scss
+//
+
+.table {
+  th {
+    font-weight: 500;
+    border-top: none;
+  }
+}
+
+//Table centered
+.table-centered {
+  td,
+  th {
+    vertical-align: middle !important;
+  }
+}
+
+.table-nowrap {
+  th,
+  td {
+    white-space: nowrap;
+  }
+}

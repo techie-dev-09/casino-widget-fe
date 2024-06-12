@@ -1,0 +1,39 @@
+.has-wrapper {
+  position: relative;
+
+  .has-input {
+    border: none;
+  }
+
+  .has-icon {
+    position: absolute;
+    right: -0px;
+    margin-right: 5px;
+    top: 4px;
+    font-size: 20px;
+    color: #000000;
+    ;
+  }
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+
+}
+
+.icon {
+  position: absolute;
+  right: 1px;
+  top: 4px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.border-dark {
+  border-color: #e5e5ea;
+}
+
+.border-radius {
+  border-radius: 48px;
+}

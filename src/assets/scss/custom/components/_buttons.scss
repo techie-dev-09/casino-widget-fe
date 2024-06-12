@@ -1,0 +1,42 @@
+// 
+// _buttons.scss
+// 
+
+button,a {
+  outline: none !important;
+}
+
+.btn-light{
+  border: 1px solid darken($light, 2%);
+}
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-dark, .btn-secondary{
+  color: $gray-200 !important;
+}
+
+.btn-auth-disable {
+  color: #8C9297  !important;
+  width: 100%;
+  background-color: rgba(140, 146, 151, 0.3);
+  border-radius: 8px;
+  border: 0px solid black;
+  gap: 10px;
+}
+
+.btn-auth {
+  color: #FFFFFF !important;
+  width: 100%;
+  background-color: #181B30;
+  border-radius: 8px;
+  border: 0px solid black;
+  gap: 10px;
+}
+
+.btn-outline-light{
+  color: $gray-900;
+}
